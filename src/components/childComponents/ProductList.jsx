@@ -4,6 +4,7 @@ import ProductCard from "./ProductCard";
 import { useEffect } from "react";
 import { getData } from "../../redux/action";
 import { Link, useParams } from "react-router-dom";
+import gif from "../../public/loading.gif";
 const ProductList = () => {
   const { products, isLoading, sortValue } = useSelector(
     (store) => store.productReducer
@@ -20,7 +21,7 @@ const ProductList = () => {
   return (
     <>
       {isLoading ? (
-        <img src="../../public/loading.gif" className="loading-gif" />
+        <img src={gif} className="loading-gif" />
       ) : (
         <div className="product-list">
           {products.map((product, index) => {
