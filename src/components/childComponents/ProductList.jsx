@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 import { useEffect } from "react";
 import { getData } from "../../redux/action";
 import { Link, useParams } from "react-router-dom";
-import gif from "../../public/loading.gif";
+import gif from "../../../public/loading.gif";
 const ProductList = () => {
   const { products, isLoading, sortValue } = useSelector(
     (store) => store.productReducer
