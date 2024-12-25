@@ -1,4 +1,4 @@
-# Note Map
+# Shopzon
 
 Hello everyone. Thanks to the course I took on Udemig, I added a new one to my projects. Here is a "Shopzon Projects" created with react.
 
