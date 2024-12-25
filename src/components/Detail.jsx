@@ -30,7 +30,7 @@ const Detail = () => {
     <div className="detail">
       <div className="container">
         {productLoading ? (
-          <img src="../../public/loading.gif" className="loading-gif" />
+          <img src="/public/loading.gif" className="loading-gif" />
         ) : (
           <>
             <img src={singleProduct.image} alt="" />
