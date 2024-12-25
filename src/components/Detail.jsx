@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addBasket, getProduct } from "../redux/action";
 import { toast } from "react-toastify";
+import gif from "../../public/loading.gif";
 const Detail = () => {
   const id = useParams();
   const dispatch = useDispatch();
@@ -30,7 +31,7 @@ const Detail = () => {
     <div className="detail">
       <div className="container">
         {productLoading ? (
-          <img src="/public/loading.gif" className="loading-gif" />
+          <img src={gif} className="loading-gif" />
         ) : (
           <>
             <img src={singleProduct.image} alt="" />
